@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Landing Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(90deg, #0044cc, #007bff);
+            color: #fff;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 1rem;
+        }
+        nav ul li {
+            position: relative;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #ffdd57;
+        }
+        nav ul li ul {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: #0044cc;
+            padding: 0.5rem 0;
+            list-style: none;
+            display: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        nav ul li ul li {
+            padding: 0.5rem 1rem;
+        }
+        nav ul li ul li a {
+            color: #fff;
+            font-weight: normal;
+        }
+        nav ul li ul li a:hover {
+            color: #ffdd57;
+        }
+        nav ul li:hover ul {
+            display: block;
+        }
+        .hero {
+            background: url('https://via.placeholder.com/1500x600') no-repeat center center/cover;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.5);
+        }
+        .hero h2 {
+            font-size: 3.5rem;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 1.5rem;
+            margin-top: 0.5rem;
+        }
+        .content {
+            padding: 3rem;
+            background: #f7f9fc;
+        }
+        .properties {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .property {
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            background: white;
+        }
+        .property:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+        .property img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        .property h3 {
+            margin: 1.5rem;
+            font-size: 1.8rem;
+        }
+        .property p {
+            margin: 0 1.5rem 1.5rem;
+            color: #555;
+        }
+        .property button {
+            margin: 1.5rem;
+            padding: 0.7rem 1.5rem;
+            border: none;
+            background: linear-gradient(90deg, #0044cc, #007bff);
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .property button:hover {
+            background: #ffdd57;
+            color: #0044cc;
+        }
+        .faq {
+            margin: 3rem 0;
+            padding: 2rem;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .faq h2 {
+            margin-bottom: 1rem;
+            font-size: 2.5rem;
+            color: #0044cc;
+        }
+        .faq ul {
+            list-style: none;
+            padding: 0;
+        }
+        .faq ul li {
+            margin: 1rem 0;
+        }
+        .faq ul li h3 {
+            font-size: 1.5rem;
+            color: #333;
+        }
+        .faq ul li p {
+            margin: 0.5rem 0 0;
+            color: #555;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 3rem;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="Logo.png" alt="">
+            
+            
+            
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li>
+                        <a href="#">Properties</a>
+                        <ul>
+                            <li><a href="#">Luxury Apartments</a></li>
+                            <li><a href="#">Cozy Bungalows</a></li>
+                            <li><a href="#">Modern Villas</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Contact</a></li>
+                    <h1>Manage Your Property</h1>
+                 <img src="Group 2.png" alt="">
+                
+                </ul>
+                
+            </nav>
+        </div>
+    </header>
+    <img src="Group 9 (1).png" alt="">
+    <h1>our recent project </h1>
+        <section class="properties">
+            <img src="Group 16.png" alt="">
+            </div>
+            <div class="property">
+                <img src="Group 17.png" alt="">
+                
+            </div>
+            <img src="Group 15.png" alt="">
+            </div>
+        </section>
+       <img src="Group 21.png" alt="">
+        
+    </main>
+    <span>
+<img src="3d-rendering-isometric-fdgdf 1.png" > <br><img src="Rectangle 17.png" alt=""></span>
+</body>
+</html>
